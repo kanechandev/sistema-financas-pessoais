@@ -5,6 +5,7 @@ import { Item } from './types/Item';
 import { categorias } from './data/categorias';
 import { items } from './data/items';
 import { filterListByMonth, getCurrentMonth } from './helpers/dateFilter';
+import { TableArea } from './components/TableArea';
 
 const App = () => {
   const [list, setList] = useState(items);
@@ -25,7 +26,7 @@ const App = () => {
 
         {/* Área de cadastro */}
 
-        {/* Relação de cadastros */}
+        <TableArea list={filteredList}/>
       </C.Body>
     </C.Container>
   );
