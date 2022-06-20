@@ -1,7 +1,7 @@
 export type Categoria = {
     [tag: string]: {
-        title: string;
-        color: string;
+        titulo: string;
+        cor: string;
         despesa: boolean;
     }
 }
