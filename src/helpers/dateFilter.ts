@@ -30,3 +30,9 @@ export const formatDate = (data: Date): string => {
 }
 
 const adicionarZeroData = (n: number): string => n < 10 ? `0${n}` : `${n}`;
+
+export const formatCurrentMonth = (currentMonth: string): string => {
+    let[ano, mes] = currentMonth.split('-');
+    let messes = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'];
+    return `${messes[parseInt(mes)-1]} / ${ano}`;
+}
